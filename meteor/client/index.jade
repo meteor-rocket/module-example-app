@@ -1,0 +1,15 @@
+head
+  title awesome
+  meta(name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no")
+
+body
+  +famousContext(class="context" perspective="1000")
+    +Plane(
+      template="title"
+      size="[200,200]"
+      content="Hello."
+      properties='{"backfaceVisibility":"visible","background":"pink","padding":"5x"}'
+    )
+
+template(name="title")
+  h1 Scrollview Example
