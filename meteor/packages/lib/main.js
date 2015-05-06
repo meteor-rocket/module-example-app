@@ -5,7 +5,7 @@ console.log(' --- ', uppercase('hello world!'))
 
 Lib = {
     hello: function() {
-        return 'Hello there.'
+        return 'Hello.'
     }
 }
 
