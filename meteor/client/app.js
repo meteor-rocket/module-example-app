@@ -11,9 +11,6 @@
 
 //import {contextWithPerspective} from 'infamous/utils'
 
-//import hello from './hello'
-//hello()
-
 console.log(' --- Package[\'trusktr:lib\'].Lib.hello()', Package['trusktr:lib'].Lib.hello())
 console.log(' --- Package[\'trusktr:lib2\'].Lib.hello()', Package['trusktr:lib2'].Lib.hello())
 
