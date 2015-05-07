@@ -48,17 +48,34 @@ _.assign(CompileManager.prototype, {
             output: {
                 filename: output
             }
+            , module: {
+                loaders: [
+                    { test: /\.css$/, loader: "style!css" }
+                    // TODO: get babel-loader working.
+                    //,{ test: /\.js$/, loader: "babel", exclude: /node_modules/ }
+                ]
+            }
         })
 
         // run the webpack compiler synchronously
         var webpackResult = Meteor.wrapAsync(webpackCompiler.run, webpackCompiler)()
 
-        // add the compiled result
+        console.log(' --------------- webpack finished ------------- \n', webpackResult)
         compileStep.addJavaScript({
             path: compileStep.inputPath,
             data: fs.readFileSync(output).toString(),
             sourcePath: compileStep.inputPath
         })
+
+        // do it asynchronously
+        //webpackCompiler.run(function() {
+            //console.log(' --------------- webpack finished ------------- \n', arguments)
+            //compileStep.addJavaScript({
+                //path: compileStep.inputPath,
+                //data: fs.readFileSync(output).toString(),
+                //sourcePath: compileStep.inputPath
+            //})
+        //})
     }
 })
 CompileManager.symlinkMap = []

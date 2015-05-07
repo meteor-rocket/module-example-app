@@ -11,8 +11,8 @@
 
 //import {contextWithPerspective} from 'infamous/utils'
 
-console.log(' --- Package[\'trusktr:lib\'].Lib.hello()', Package['trusktr:lib'].Lib.hello())
-console.log(' --- Package[\'trusktr:lib2\'].Lib.hello()', Package['trusktr:lib2'].Lib.hello())
+console.log(' --- lib', Package['trusktr:lib'].Lib.hello())
+console.log(' --- lib2', Package['trusktr:lib2'].Lib.hello())
 
 Logger.setLevel("famous-views", "info")
 
@@ -41,6 +41,18 @@ Template.body.helpers({
 
 Template.title.rendered = function() {
     console.log(' --- Same modifiers:', FView.from(this).parent.modifier == FView.from(this).parent._modifier)
+
+    // wrap a DOM element in a Famo.us Surface.
+    var surface = new famous.core.Surface
+    surface.attach(document.getElementById('whatever'))
+
+    // listen to pinch zoom events on said DOM element.
+    var sync = new famous.inputs.MouseSync // MouseSync, RotateSync, etc
+    surface.pipe(sync)
+    sync.on('update', function(data) {
+      console.log('Incredibly useful event data: ', data)
+    })
+    console.log('Event handlers attached.')
 }
 
 Meteor.startup(function() {

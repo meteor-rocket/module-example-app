@@ -3,9 +3,11 @@ head
   meta(name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no")
 
 body
-  +famousContext(class="context" perspective="1000")
-    +Modifier(size="[200,200]")
-      +Surface(template="title" content="Hello." properties='{"backfaceVisibility":"visible","background":"pink","padding":"5x"}')
+  div(id="whatever" style="border: 1px solid red; width: 200px; height: 200px")
+  div(style="width: 400px; height: 400px")
+    +famousContext(class="context" perspective="1000")
+      +Modifier(size="[400,400]")
+        +Surface(template="title" content="Hello." properties='{"backfaceVisibility":"visible","background":"pink","padding":"5x"}')
 
 template(name="title")
   h1 Scrollview Example
