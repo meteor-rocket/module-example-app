@@ -1,17 +1,17 @@
 Package.describe({
-    name: 'trusktr:webpack',
+    name: 'rocket:module',
     version: '0.0.1',
     // Brief, one-line summary of the package.
-    summary: 'Write modular organized code in Meteor without depending on load order.',
+    summary: 'ES6 Modules for Meteor.',
     // URL to the Git repository containing the source code for this package.
-    git: '',
+    git: 'https://github.com/trusktr/rocket-module',
     // By default, Meteor will default to using README.md for documentation.
     // To avoid submitting documentation, set this field to null.
     documentation: 'README.md'
 })
 
 Package.registerBuildPlugin({
-    name: 'webpack',
+    name: 'rocket:module',
     use: ['meteor'],
     sources: ['plugin/plugin.js'],
     npmDependencies: {
@@ -24,14 +24,8 @@ Package.registerBuildPlugin({
     }
 })
 
-Package.onUse(function(api) {
-    api.versionsFrom('1.1.0.2')
-    api.addFiles('webpack.js', 'client')
-    api.export('Webpack', 'client')
-})
-
 Package.onTest(function(api) {
     api.use('tinytest')
-    api.use('trusktr:webpack')
-    api.addFiles('webpack-tests.js')
+    api.use('rocket:module')
+    api.addFiles('module-tests.js')
 })

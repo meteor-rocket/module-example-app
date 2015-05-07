@@ -18,12 +18,10 @@ Package.onUse(function(api) {
     api.versionsFrom('1.1.0.2')
 
     api.use([
-        'trusktr:webpack'
+        'rocket:module'
     ], 'client')
 
-    api.addFiles('main.js', 'client', {
-        bare: true
-    })
+    api.addFiles('main.js', 'client')
 
     api.export('Lib', 'client')
 })

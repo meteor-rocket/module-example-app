@@ -42,6 +42,7 @@ reactive-dict@1.1.0
 reactive-var@1.0.5
 reload@1.1.3
 retry@1.0.3
+rocket:module@0.0.1
 routepolicy@1.0.5
 sdecima:javascript-detect-element-resize@0.5.3
 session@1.1.0
@@ -51,7 +52,6 @@ templating@1.1.1
 tracker@1.0.7
 trusktr:lib@0.0.1
 trusktr:lib2@0.0.1
-trusktr:webpack@0.0.1
 ui@1.0.6
 underscore@1.0.3
 url@1.0.4
