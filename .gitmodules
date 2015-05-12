@@ -1,0 +1,3 @@
+[submodule "meteor/packages/module"]
+	path = meteor/packages/module
+	url = git@github.com:trusktr/rocket-module.git
