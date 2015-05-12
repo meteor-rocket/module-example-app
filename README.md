@@ -1,5 +1,5 @@
 To run the app:
 
 ```sh
-npm start
+cd meteor && meteor
 ```
