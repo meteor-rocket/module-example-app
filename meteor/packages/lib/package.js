@@ -21,7 +21,7 @@ Package.onUse(function(api) {
         'rocket:module'
     ], 'client')
 
-    api.addFiles('main.js', 'client')
+    api.addFiles('client.module.js', 'client')
 
     api.export('Lib', 'client')
 })
