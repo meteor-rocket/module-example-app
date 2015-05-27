@@ -11,8 +11,8 @@
 
 //import {contextWithPerspective} from 'infamous/utils'
 
-console.log(' --- lib', Package['trusktr:lib'].Lib.hello())
-console.log(' --- lib2', Package['trusktr:lib2'].Lib.hello())
+console.log(' --- trusktr:scratchpaper', Package['trusktr:scratchpaper'].Lib.hello())
+console.log(' --- trusktr:lib2', Package['trusktr:lib2'].Lib.hello())
 
 Logger.setLevel("famous-views", "info")
 
