@@ -48,6 +48,7 @@ reactive-var@1.0.5
 reload@1.1.3
 retry@1.0.3
 rocket:module@0.1.0
+rocket:webpack@1.9.10_1
 routepolicy@1.0.5
 sanjo:meteor-files-helpers@1.1.0_4
 sanjo:meteor-version@1.0.0
