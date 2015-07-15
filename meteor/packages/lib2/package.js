@@ -12,6 +12,7 @@ Package.describe({
 
 Npm.depends({
     'lower-case': "1.1.2",
+    'upper-case': "1.1.2"
 })
 
 Package.onUse(function(api) {
@@ -21,7 +22,9 @@ Package.onUse(function(api) {
         'rocket:module'
     ], 'client')
 
-    api.addFiles('module.js', 'client')
+    api.addFiles(['module.js'], 'client')
+    api.addFiles(['blah.js'], 'client')
+    api.addFiles(['foo.js'], 'client', { bare: true })
 
     api.export('Lib', 'client')
 })
