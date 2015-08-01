@@ -1,0 +1,9 @@
+[submodule "meteor/packages/build-tools"]
+	path = meteor/packages/build-tools
+	url = git@github.com:meteor-rocket/build-tools.git
+[submodule "meteor/packages/scratchpaper"]
+	path = meteor/packages/scratchpaper
+	url = git@github.com:trusktr/meteor-scratchpaper.git
+[submodule "meteor/packages/module"]
+	path = meteor/packages/module
+	url = git@github.com:meteor-rocket/module.git
