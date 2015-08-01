@@ -1,5 +1,5 @@
 {
-    "famous": "^0.6.0",
+    "famous": "git+https://github.com/trusktr/engine.git#joe",
     "jss": "^2.0.0",
     "jss-nested": "^0.1.8",
     "upper-case": "^1.1.0"
