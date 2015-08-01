@@ -1,7 +1,10 @@
 To run the app:
 
 ```sh
-cd meteor && meteor
+git submodule init
+git submodule update
+cd meteor
+meteor
 ```
 
 Meteor and `rocket:module`
