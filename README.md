@@ -105,8 +105,6 @@ Heck. If you really like AMD for some reason, use it:
 
 You've just imported React, Famous, and async onto every client and server. It works on both sides! Now *that's* something to feel good about.
 
-### See it in action here.
-
 Module load order
 -----------------
 
