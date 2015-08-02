@@ -68,7 +68,7 @@ import Node  from 'famous/core/Node'
 import async from 'async'
 ```
 
-Use CommonJS module syntax if you feel more comfortable with that or if you need asynchronous control of your module loading:
+Use CommonJS module syntax if you feel more comfortable with that.
 
 ##### /path/to/your/app/server/entry.js
 ```js
