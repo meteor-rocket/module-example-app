@@ -27,7 +27,7 @@ You can use `rocket:module` to load client-side NPM modules. Here's how:
 meteor add rocket:module
 ```
 
-### 2. Add the npm modules you want to packages.json
+### 2. Add the npm modules you want to `npm.json`
 
 Create an `npm.json` file in your app or package that specifies the
 dependencies you'd like from NPM. In most cases, you should leave the carrot
