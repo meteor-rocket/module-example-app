@@ -75,7 +75,7 @@ or
 > ...
 > ```
 
-Use CommonJS module syntax if you feel more comfortable with that.
+Use CommonJS module syntax if you feel more comfortable with that:
 
 > `/path/to/your/app/server/entry.js`
 > ```js
