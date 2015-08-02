@@ -1,3 +1,4 @@
+
 To run the app:
 
 ```sh
@@ -38,13 +39,14 @@ versions in your package for whatever reason, you can (but try to avoid)
 If you're making a package, be sure to add your `npm.json` file via
 `api.addFiles()`.
 
-```js
-{
-  "react": "^0.13.1",
-  "famous": "^0.6.0",
-  "async": "^1.4.0"
-}
-```
+> `/path/to/your/app/npm.json`
+> ```js
+> {
+>   "react": "^0.13.1",
+>   "famous": "^0.6.0",
+>   "async": "^1.4.0"
+> }
+> ```
 
 ### 3. Write code with ES6, CommonJS, or AMD modules.
 
@@ -53,51 +55,57 @@ that end with `.entry.js` or are entirely named `"entry.js"` are entry points
 into your application. You'll need at least one entrypoint file. In each entrypoint you can
 begin importing whatever you need, like in the following ES6 samples:
 
-##### /path/to/your/app/entry.js
-```js
-import React from 'react'
-import Node  from 'famous/core/Node'
-import async from 'async'
-```
+> `/path/to/your/app/entry.js`
+> ```js
+> import React from 'react'
+> import Node  from 'famous/core/Node'
+> import async from 'async'
+>
+> ...
+> ```
+
 or
 
-##### /path/to/your/app/main.entry.js
-```js
-import React from 'react'
-import Node  from 'famous/core/Node'
-import async from 'async'
-```
+> `/path/to/your/app/main.entry.js`
+> ```js
+> import React from 'react'
+> import Node  from 'famous/core/Node'
+> import async from 'async'
+>
+> ...
+> ```
 
 Use CommonJS module syntax if you feel more comfortable with that.
 
-##### /path/to/your/app/server/entry.js
-```js
-let React = require('react')
-let Node  = require('famous/core/Node')
-let async = require('async')
-```
+> `/path/to/your/app/server/entry.js`
+> ```js
+> let React = require('react')
+> let Node  = require('famous/core/Node')
+> let async = require('async')
+>
+> ...
+> ```
 
 Heck. If you really like AMD for some reason, use it:
 
-##### /path/to/your/app/server/entry.js
-```js
-define([
-    'react',
-    'famous/core/Node',
-    'async',
-], function(
-    React,
-    Node,
-    async,
-) {
-})
-```
+> `/path/to/your/app/server/entry.js`
+> ```js
+> define([
+>     'react',
+>     'famous/core/Node',
+>     'async',
+> ], function(
+>     React,
+>     Node,
+>     async,
+> ) {
+>     ...
+> })
+> ```
 
 You've just imported React, Famous, and async onto every client and server. It works on both sides! Now *that's* something to feel good about.
 
-### See it in action in the example app.
-
-- []()
+### See it in action here.
 
 Module load order
 -----------------
@@ -119,4 +127,3 @@ Meteor's load order mechanism.
 - `rocket:module` will have a cache before reaching 1.0.0. Until then, your app
   may take a long time to build if you've got lots of files.
 - Version 1.0.0 of `rocket:module` will handle source maps.
-
