@@ -8,6 +8,8 @@ cd meteor
 meteor --release PLUGINS-PREVIEW@2
 ```
 
+Until the preview version of Meteor is released, we have to run all our Meteor commands with `meteor --release PLUGINS-PREVIEW@2` instead of just `meteor`. This is so that `rocket:module` can use Meteor's new `Plugin.registerCompiler` API, which will be out very soon!
+
 Meteor and `rocket:module`
 ==========================
 
@@ -24,7 +26,7 @@ You can use `rocket:module` to load client-side NPM modules. Here's how:
 ### 1. Add `rocket:module`
 
 ```sh
-meteor add rocket:module
+meteor --release PLUGINS-PREVIEW@2 add rocket:module
 ```
 
 ### 2. Add the npm modules you want to `npm.json`
