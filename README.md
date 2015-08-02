@@ -86,7 +86,7 @@ Use CommonJS module syntax if you feel more comfortable with that:
 > ...
 > ```
 
-Heck. If you really like AMD for whatever reason, use it, `rocket:module` won't hold it against you:
+Heck. If you really like AMD, use it:
 
 > `/path/to/your/app/server/entry.js`
 > ```js
