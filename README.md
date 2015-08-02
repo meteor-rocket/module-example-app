@@ -4,7 +4,7 @@ To run the app:
 git submodule init
 git submodule update
 cd meteor
-meteor
+meteor --release PLUGINS-PREVIEW@2
 ```
 
 Meteor and `rocket:module`
