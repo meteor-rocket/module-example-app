@@ -6,14 +6,5 @@
 meteor-platform
 autopublish
 insecure
-gadicohen:famous-views
-mjn:famous
-mquandalle:jade
-
-lai:reactive-number
-lai:document-methods
-trusktr:lib2
-trusktr:scratchpaper
-package-version-parser
-coffeescript
 rocket:module
+
