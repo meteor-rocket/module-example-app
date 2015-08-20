@@ -1,6 +1,7 @@
 {
-    "famous": "git+https://github.com/trusktr/engine.git#joe",
+    "infamous-engine": "^0.7.1-0",
     "jss": "^2.0.0",
     "jss-nested": "^0.1.8",
-    "upper-case": "^1.1.0"
+    "react": "^0.13.0",
+    "reacfamo": "^0.1.9"
 }
