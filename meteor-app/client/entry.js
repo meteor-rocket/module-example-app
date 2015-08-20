@@ -8,7 +8,7 @@ import Camera         from 'famous/components/Camera'
 import jss            from 'jss'
 import jssNested      from 'jss-nested'
 
-//console.log(ExampleExport)
+console.log('camera', Camera)
 
 jss.use(jssNested)
 

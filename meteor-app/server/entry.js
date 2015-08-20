@@ -1,3 +1,5 @@
+import Items from '../modules/collections/Items'
+
 Items.find({}).forEach(function(item) {
     Items.remove(item._id);
 });
