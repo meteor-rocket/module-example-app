@@ -49,7 +49,7 @@ reactive-var@1.0.6-plugins.0
 reload@1.1.4-plugins.0
 retry@1.0.4-plugins.0
 rocket:build-tools@2.1.4
-rocket:module@0.6.0
+rocket:module@0.7.0
 rocket:webpack@1.10.5
 routepolicy@1.0.6-plugins.0
 sanjo:meteor-files-helpers@1.1.0_7
